@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator Sederhana</title>
+</head>
+<body>
+<h3>Kalkulator Sederhana</h3>
+<input id="n1" type="number" >
+<input id="n2" type="number" >
+
+<button onclick="hitung()">Tambah</button>
+
+<p id="hasil">Hasil: </p>
+
+<script>
+    function hitung() {
+        const n1 = parseFloat(
+            document.getElementById('n1').value);
+        const n2 = parseFloat(
+            document.getElementById('n2').value);
+        const hasil = n1 + n2
+        document.getElementById('hasil')
+            .innerText = "Hasil: " + hasil;
+    }
+</script>
+</body>
+</html>
